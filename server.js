@@ -21,6 +21,9 @@ htmlRoutes(app, path);
 //won't need this til later
 //apiRoutes(app, path);
 
+app.use(express.static('css'));
+app.use(express.static('js'));
+
 
 
 app.listen(PORT, function() {

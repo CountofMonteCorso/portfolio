@@ -5,12 +5,6 @@ module.exports = function(app, path) {
 	    res.sendFile(path.join(__dirname, publicPath + "home.html"));
 	});
 
-
-	app.get("/css", function(req, res) {
-		res.send('path: ' + path)
-	    // res.sendFile(path.join(__dirname, publicPath + "home.html"));
-	});
-
 	app.get("/about", function(req, res) {
 	    res.sendFile(path.join(__dirname, publicPath + "about.html"));
 	});
