@@ -20,6 +20,7 @@
   "dependencies": {
     "express": "^4.16.2",
     "gmail-node": "^1.2.0",
-    "node-gmail": "^1.0.1"
+    "node-gmail": "^1.0.1",
+    "nodemailer": "^4.4.2"
   }
 }

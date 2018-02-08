@@ -9,6 +9,11 @@ module.exports = function(app, path) {
 	    res.sendFile(path.join(__dirname, publicPath + "about.html"));
 	});
 
+
+	app.get("/contact", function(req, res) {
+	    res.sendFile(path.join(__dirname, publicPath + "contact.html"));
+	});
+
 	app.get("/projects", function(req, res) {
 	    res.sendFile(path.join(__dirname, publicPath + "projects.html"));
 	});
@@ -18,28 +23,27 @@ module.exports = function(app, path) {
 	// });
 
 	app.post("/contact", function(req, res) {
-		var gmailNode = require('gmail-node');
-		var clientSecret = {
-		    installed: {
-		        client_id: "943233085776-09riqtcnhp62pv3j2erb7e20lq0pirr9.apps.googleusercontent.com",
-		        project_id: "helical-chemist-194601",
-		        auth_uri: "https://accounts.google.com/o/oauth2/auth",
-		        token_uri: "https://accounts.google.com/o/oauth2/token",
-		        auth_provider_x509_cert_url: "https://www.googleapis.com/oauth2/v1/certs",
-		        client_secret: "ov9uNjbWlipSx3QynazX0atJ"
+		var nodemailer = require('nodemailer');
+		var transporter = nodemailer.createTransport({
+		    service: 'gmail',
+		 	auth: {
+		        user: 'kevdevmailer@gmail.com',
+		        pass: process.env.gmailpwd
 		    }
-		};
-		gmailNode.init(clientSecret, '../../client_id.json', function(err,data) {
-			console.log('gmail init', err, data);
-			var emailMessage = {
-			    to: 'kcorso89@gmail.com',		
-			    subject: 'suhh dude',
-			    message: 'suh'
-			};
-			gmailNode.send(emailMessage, function (err, data) {
-				console.log('send email', err, data);
-			});
 		});
 
+		const mailOptions = {
+		    from: 'kevdevmailer@gmail.com', // sender address
+		    to: 'kcorso89@gmail.com', // list of receivers
+		    subject: 'Dev Test', // Subject line
+		    html: '<p>Blah</p>'// plain text body
+		};
+
+		transporter.sendMail(mailOptions, function (err, info) {
+		   if (err)
+		       console.log(err);
+		   else
+		       console.log(info);
+		});
 	});
 }
