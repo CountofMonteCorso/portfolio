@@ -23,6 +23,9 @@ htmlRoutes(app, path);
 
 app.use('/css', express.static('css'));
 app.use('/js', express.static('js'));
+app.use('main.js', express.static('main.js'));
+app.use('/images', express.static('images'));
+
 
 
 
