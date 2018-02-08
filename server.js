@@ -3,7 +3,7 @@
 var express = require("express");
 var bodyParser = require("body-parser");
 var path = require("path");
-var htmlRoutes = require("./app/routing/htmlRoutes.js"); 
+var htmlRoutes = require("./routing/htmlRoutes.js"); 
 // might need the one below later
 //var apiRoutes = require("./app/routing/apiRoutes.js");
 // Sets up the Express App

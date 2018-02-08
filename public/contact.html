@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+
+    <link href="../css/style.css" rel="stylesheet" />
+   
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <!--google font link -->
+  <link href="https://fonts.googleapis.com/css?family=Jura" rel="stylesheet">
+  <title>Contact Kev</title>
+</head>
+<body>
+  <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+
+    <nav class="black" role="navigation" id="navbarid" style="font-family: 'Jura';">
+        <div class="nav-wrapper container">
+
+          <a id="logo-container" href="home.html" class="brand-logo">Kev the Dev</a>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="about.html">About Me</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="root"></div>
+      <div class="parallax-container" style="height:200px">
+        <div class="parallax">
+          <img src="../images/contactbackground1.jpg" alt="contactbackground1"></div>
+      </div>
+    <div class="section black" style="text-align: center">
+      <div class="row container">
+        <h2 class="header" style="text-align: center; color: white; font-size: 48pt; font-family: 'Jura';">Contact Form </h2>
+        <h2 class="header" style="text-align: center; color: white; font-size: 12pt; font-family: 'Jura';"> All fields are required 
+        </h6>
+      </br>
+        <form class="col l12 m12 s12 xs12" action="mailto:kcorso89@gmail.com" method="post" enctype="text/plain" style="font-family: 'Jura';">
+          <div class="row">
+            <div class="input-field col l6 m6 s6 xs6">
+              <input placeholder="First Name" id="first_name" type="text" class="validate" required>
+                <label for="first_name">First Name</label>
+            </div>
+            <div class="input-field col l6 m6 s6 xs6">
+              <input placeholder="Last Name" id="last_name" type="text" class="validate" required>
+                  <label for="last_name">Last Name</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col l6 m6 s6 xs6">
+              <input placeholder="Email" id="email" type="email" class="validate" required>
+                <label for="email">Email</label>
+            </div>
+            <div class="input-field col l6 m6 s6 xs6">
+              <input placeholder="Just one though!" id="email" type="text" class="validate" required>
+                <label for="email">Favorite Candy</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <textarea placeholder="What's up?" id="textarea1" class="materialize-textarea"></textarea>
+                <label for="textarea1">Message</label>
+            </div>
+          </div>
+            </br>
+          <div class= "row">
+            <div class="btn-group" role="group">
+              <button class="btn waves-effect waves-light #304ffe indigo accent-4" type="submit" name="action">Send</button>                
+            </div>
+          </div>
+        </form>
+         
+      </div>
+    </div>
+    <div class="parallax-container">
+      <div class="parallax">
+        <img src="../images/contactbackground2.jpg" alt="contactbackground2" style="height:200px">
+      </div>
+    </div>
+      </div>
+        <div id="copyright" style="background-color: black; text-align: center; color: white;"> © Kevin Corso 2017-2018
+        </div>
+    </div>
+
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <script type="text/javascript" src="../main.js"></script>
+</body>
+</html>

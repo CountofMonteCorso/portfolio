@@ -7,34 +7,39 @@
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Jura" rel="stylesheet">
   <link href="../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
-  <nav class="black" role="navigation" id="navbarid">
+  <nav class="black" role="navigation" id="navbarid" style="color: white; font-family: 'Jura';">
     <div class="nav-wrapper container">
-      <a id="logo-container" href="#" class="brand-logo">Kev the Dev</a>
+      <a id="logo-container" href="/home.html" class="brand-logo">Kev the Dev</a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="#">Projects</a></li>
+        <li><a href="/about">About Me</a></li>
+        <li><a href="/projects">Projects</a></li>
+        <li><a href="/contact">Contact</a></li>
       </ul>
 
       <ul id="nav-mobile" class="side-nav">
-        <li><a href="#">About Me</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
   </nav>
 
-  <div id="index-banner" class="parallax-container">
+  <div id="index-banner" class="parallax-container" >
     <div class="section no-pad-bot">
       <div class="container">
         <br><br>
-        <h1 class="header center white-text">Welcome to my portfolio</h1>
+        <h1 class="header center white-text">Welcome to my website</h1>
         <div class="row center">
           <h5 class="header col s12 light">Have a look around and maybe get to know a little bit about me.</h5>
         </div>
         <div class="row center">
-          <a href="/about" id="download-button" class="btn-large waves-effect waves-light black">About Me</a>
+          <a href="about.html" id="download-button" class="btn-large waves-effect waves-light black">About Me</a>
         </div>
         <br><br>
 
@@ -48,13 +53,13 @@
     <div class="section" id="icon-div">
 
       <!--   Icon Section   -->
-      <div class="row">
+      <div class="row" style="font-family: 'Jura';">
         <div class="col s12 m4">
           <div class="icon-block">
-            <h2 class="center white-text"><i class="material-icons">lightbulb_outline</i></h2>
+            <h2 class="center white-text"><i class="material-icons">local_library</i></h2>
             <h5 class="center">Always learning</h5>
 
-            <p class="light">Something cool here :]</p>
+            <p class="light">Technology is constantly updating and evolving; I'm doing the same to keep up.</p>
           </div>
         </div>
 
@@ -63,16 +68,16 @@
             <h2 class="center white-text"><i class="material-icons">group</i></h2>
             <h5 class="center">Team Player</h5>
 
-            <p class="light">Something equally cool here :D </p>
+            <p class="light">Success is just more fun when you have someone to share it with. </p>
           </div>
         </div>
 
         <div class="col s12 m4">
           <div class="icon-block">
-            <h2 class="center white-text"><i class="material-icons">settings</i></h2>
-            <h5 class="center">Easy to work with</h5>
+            <h2 class="center white-text"><i class="material-icons">code</i></h2>
+            <h5 class="center">Current Technologies</h5>
 
-            <p class="light">pls f#$%ing hire me already ;_;</p>
+            <p class="light">Javascript, MySQL, Express, React, Node, HTML, CSS, and more.</p>
           </div>
         </div>
       </div>
@@ -81,11 +86,14 @@
   </div>
 
 
-  <div class="parallax-container valign-wrapper">
+  <div class="parallax-container valign-wrapper" >
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
-          <h5 class="header col s12 light">ooooh spaaace! something inspiring or whatever here :]</h5>
+          <h5 class="header col s12 light">Check out some of my past and current work.</h5>
+          <div class="row center">
+          <a href="projects.html" id="download-button" class="btn-large waves-effect waves-light black">Projects</a>
+        </div>
         </div>
       </div>
     </div>
@@ -95,14 +103,12 @@
   <div class="container">
     <div class="section" id="parallax-section-two">
 
-      <div class="row">
+      <div class="row" style="font-family: 'Jura';">
         <div class="col s12 center">
           <h3><i class="mdi-content-send brown-text"></i></h3>
-          <h4>Let's Talk</h4>
-          <p class="left-align light">If you're looking for a freelancer, long-term contract, or a new member of your team, let me know.  Together, we can bring your vision to life online.</p>
-          <div class="row center">
-            <a href="/about" id="download-button" class="btn-large waves-effect waves-light #1a237e indigo darken-4">Contact</a>
-          </div>
+          <h4>Solutions for every project.</h4>
+          <p class="center-align light">If you're looking for a freelancer, long-term contract, or a new member of your team, let me know.  If I can't do it alone, I have a team that can.  Together, we can bring your vision to life online.</p>
+
         </div>
       </div>
 
@@ -114,7 +120,10 @@
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
-          <h5 class="header col s12 light">Oooooh spaaace</h5>
+          <h5 class="header col s12 light">There's no better time to get in touch.</h5>
+                    <div class="row center">
+            <a href="contact.html" id="download-button" class="btn-large waves-effect waves-light black">Contact</a>
+          </div>
         </div>
       </div>
     </div>
@@ -130,13 +139,18 @@
 
 
         </div>
-        <div class="col xs6">
+        <div class="col xs6 right-align" id="connect-footer">
           <h5 class="white-text">Connect</h5>
-          <ul>
-            <li><a class="white-text" href="https://www.linkedin.com/in/kevincorso/">LinkedIn</a></li>
-            <li><a class="white-text" href="https://github.com/CountofMonteCorso">GitHub</a></li>
-            <li><a class="white-text" href="mailto:kcorso89@gmail.com">Email</a></li>
-          </ul>
+          <p>
+            <a class="white-text" href="http://www.linkedin.com/in/kevincorso/">LinkedIn</a> ||
+            <a class="white-text" href="https://github.com/CountofMonteCorso">GitHub</a> ||
+            <a class="white-text" href="mailto:kcorso89@gmail.com">Email</a>
+          </p>  
+<!--           <ul>
+            <li><a class="white-text left-align" href="https://www.linkedin.com/in/kevincorso/">LinkedIn</a></li>
+            <li><a class="white-text left-align" href="https://github.com/CountofMonteCorso">GitHub</a></li>
+            <li><a class="white-text left-align" href="mailto:kcorso89@gmail.com">Email</a></li>
+          </ul> -->
         </div>
       </div>
       <div id="copyright"> © Kevin Corso 2017-2018

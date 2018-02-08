@@ -9,6 +9,10 @@ module.exports = function(app, path) {
 	    res.sendFile(path.join(__dirname, publicPath + "about.html"));
 	});
 
+	app.get("/projects", function(req, res) {
+	    res.sendFile(path.join(__dirname, publicPath + "projects.html"));
+	});
+
 	app.get("*", function(req, res) {
 	    res.redirect('/');
 	});

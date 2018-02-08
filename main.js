@@ -9,3 +9,4 @@ $('#redirectBtn').on("click", function(){
 $('#redirectBtnTwo').on("click", function(){
 	window.location.href = "/home"
 });
+

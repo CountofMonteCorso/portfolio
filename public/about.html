@@ -4,24 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="theme-color" content="#000000">
-    <!--
-      manifest.json provides metadata used when your web app is added to the
-      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
-    -->
+
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
 
     <link href="portfoliocss.css" rel="stylesheet" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-     <!-- Compiled and minified CSS -->
+   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
 
   <!-- Compiled and minified JavaScript -->
@@ -38,24 +26,43 @@
     <noscript>
       You need to enable JavaScript to run this app.
     </noscript>
+
+      <nav class="black" role="navigation" id="navbarid" style="font-family: 'Jura';">
+        <div class="nav-wrapper container">
+
+          <a id="logo-container" href="home.html" class="brand-logo">Kev the Dev</a>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="about.html">About Me</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
     <div id="root"></div>
-      <div class="parallax-container" style="height:200px">
+      <div class="parallax-container" style="height:250px">
         <div class="parallax">
           <img src="../images/aboutbackground1.jpg" alt="backgroundimage"></div>
       </div>
     <div class="section black" style="text-align: center">
       <div class="row container">
-          <h2 class="header" style="text-align: left; color: white; font-size: 48pt; font-family: 'Jura';">Who is this guy? </h2>
+          <h2 class="header" style="text-align: left; color: white; font-size: 48pt; font-family: 'Jura';">
+            Who is this guy? 
+          </h2>
           <div class="row">
-            <div class="col xs6">
+            <div class="col xs4">
               <img src="../images/smile.jpg" id="face-img" alt="Kev the Dev" style="text-align: center; max-width: 200px; min-width: 50px; padding-top: 5%">
             </div>
-            <div class=" col xs6">
-              <p style="text-align: left; color: white; font-size: 14pt; font-family: 'Jura'">Obviously at this point, you're aware that I make stuff online and that I love parallax (the scrolling animation) and space. In fact there's a reason I chose to use all pictures of nebulae specifically.  Nebula are these big, beautiful interstellar clouds of dust, helium, hydrogen, and all kinds of gasses; the stuff that you need to make stars.  I see myself like the nebula: while I'm still in the very early stages of my new career, I've got all the tools I need to make the stars come to life for you and your business.</br></br>But when I'm not on my computer coding away, you can find me all over down, working out on gymnastic rings in the park, training in the mixed martial arts, relaxing with a good book or video game, working on my tan at the beach, or via the contact form on this website ;] Looking forward to working with you soon!</p>
+            <div class=" col xs8">
+              <p style="text-align: left; color: white; font-size: 14pt; font-family: 'Jura'" id="about-text">
+              Obviously at this point, you're aware that I make stuff online and that I love parallax (the scrolling animation) and space. In fact there's a reason I chose to use all pictures of nebulae specifically.  Nebula are these big, beautiful interstellar clouds of dust, helium, hydrogen, and all kinds of gasses; they're not a star yet, but they contain all the stuff that you need to make stars.  I see myself like the nebula: while I'm still in the very early stages of my new career, I've got all the tools I need to make some really cool things on the web.
+              </br></br>
+              But when I'm not on my computer coding away, you can find me all over down, working out on gymnastic rings in the park, training in mixed martial arts, relaxing with a good book, movie, or video game, working on my tan at the beach, or via the contact form on this website ;] Looking forward to working with you soon!
+              </p>
             </div>
           </div>
 
-          <a class="waves-effect waves-white btn-large #7986cb indigo lighten- hoverable" style="text-align: center" id="redirectBtnTwo" title="How convenient!">Oh what's this? A link to that very contact form?</a>
+          <a class="waves-effect waves-white btn-large #7986cb indigo lighten- hoverable" style="text-align: center" id="modal-button" title="How convenient!" href="contact.html">Oh what's this? A link to that very contact form?</a>
       </div>
     </div>
     <div class="parallax-container">
@@ -66,21 +73,12 @@
       </div>
         <div id="copyright" style="background-color: black; text-align: center; color: white;"> © Kevin Corso 2017-2018
         </div>
-
+    </div>
 
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
   <script type="text/javascript" src="../main.js"></script>
 
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
   </body>
 </html>
