@@ -22,7 +22,7 @@ htmlRoutes(app, path);
 //apiRoutes(app, path);
 
 
-app.use('/public', express.static('/public'));
+app.use('/public', express.static(path.join(__dirname + '/public')));
 
 
 
