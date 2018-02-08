@@ -23,8 +23,10 @@ htmlRoutes(app, path);
 
 app.use('/css', express.static('css'));
 app.use('/js', express.static('js'));
-app.use('main.js', express.static('main.js'));
+app.use('/public', express.static('/public'));
 app.use('/images', express.static('images'));
+
+app.use('/fonts', express.static('fonts'));
 
 
 
