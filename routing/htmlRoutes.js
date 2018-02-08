@@ -13,9 +13,9 @@ module.exports = function(app, path) {
 	    res.sendFile(path.join(__dirname, publicPath + "projects.html"));
 	});
 
-	app.get("*", function(req, res) {
-	    res.redirect('/');
-	});
+	// app.get("*", function(req, res) {
+	//     res.redirect('/');
+	// });
 
 	app.post("/contact", function(req, res) {
 		var gmailNode = require('gmail-node');
