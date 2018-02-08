@@ -21,8 +21,8 @@ htmlRoutes(app, path);
 //won't need this til later
 //apiRoutes(app, path);
 
-app.use(express.static('css'));
-app.use(express.static('js'));
+app.use('/css', express.static('css'));
+app.use('/js', express.static('js'));
 
 
 
