@@ -19,6 +19,7 @@
   "homepage": "https://github.com/CountofMonteCorso/spiritpokemon#readme",
   "dependencies": {
     "express": "^4.16.2",
+    "gmail-node": "^1.2.0",
     "node-gmail": "^1.0.1"
   }
 }

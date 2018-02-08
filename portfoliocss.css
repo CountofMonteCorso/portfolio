@@ -17,3 +17,8 @@
 	max-width:90%;
 	}
 }
+
+.col.xs8.bio-desc {
+    float: none;
+    white-space: nowrap ;
+}
