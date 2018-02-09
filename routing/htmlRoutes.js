@@ -35,8 +35,9 @@ module.exports = function(app, path) {
 		const mailOptions = {
 		    from: 'kevdevmailer@gmail.com', // sender address
 		    to: 'kcorso89@gmail.com', // list of receivers
-		    subject: 'Dev Test', // Subject line
-		    html: '<p>Blah</p>'// plain text body
+		    subject: 'Dev Test', // Subject line "new email from req.firstname lastname type thing"
+		    cc: //req.body
+		    html: req.yourface// plain text body
 		};
 
 		transporter.sendMail(mailOptions, function (err, info) {
