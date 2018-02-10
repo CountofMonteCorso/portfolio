@@ -23,8 +23,9 @@ module.exports = function(app, path) {
 	// });
 
 	app.post("/contact", function(req, res) {
+		console.log(req.body);
 		var nodemailer = require('nodemailer');
-		var transporter = nodemailer.createTransport({
+		let transporter = nodemailer.createTransport({
 		    service: 'gmail',
 		 	auth: {
 		        user: 'kevdevmailer@gmail.com',
@@ -36,8 +37,8 @@ module.exports = function(app, path) {
 		    from: 'kevdevmailer@gmail.com', // sender address
 		    to: 'kcorso89@gmail.com', // list of receivers
 		    subject: 'Dev Test', // Subject line "new email from req.firstname lastname type thing"
-		    cc: //req.body
-		    html: req.yourface// plain text body
+		//     cc: //req.body.email
+		    html: '<p>suhh dude</p>'// req.body plain text body
 		};
 
 		transporter.sendMail(mailOptions, function (err, info) {
