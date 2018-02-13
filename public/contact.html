@@ -14,6 +14,15 @@
 
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+<!--formerly at the bottom -->
+  <script
+  src="http://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <script type="text/javascript" src="../main.js"></script>
+
     <!--google font link -->
   <link href="https://fonts.googleapis.com/css?family=Jura" rel="stylesheet">
   <title>Contact Kev</title>
@@ -76,7 +85,7 @@
             </br>
           <div class= "row">
             <div class="btn-group" role="group">
-              <button class="btn waves-effect waves-light #304ffe indigo accent-4" type="submit" name="action">Send</button>                
+              <button class="btn waves-effect waves-light #304ffe indigo accent-4" type="submit" name="action" id="submit-button">Send</button>                
             </div>
           </div>
         </form>
@@ -93,30 +102,17 @@
         </div>
     </div>
 
-<!--modal -->
-  <div class="contact-modal modal fade" id="thanks-modal">
-    <div class="modal-dialog" role="document">
-      <div class="modal content">
-        <p> Thank you for your submission! I'll do my best to respond as soon as possible. Look out for a copy of your message in the email provided as well :]</p>
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Sounds good.</button>
-      </div>
-    </div>
-  </div>
 
 
-  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-  <script type="text/javascript" src="../main.js"></script>
 
   <script type="text/javascript">
-      $(".formID").on("submit", function(event){
-        event.preventDefault();
+      $("#formID").on("submit", function(event){
+        Materialize.toast('Thank you!', 4000, 'rounded');
 
-        var formData = $(".formID").serializeArray();
-
-        $.post("api/htmlRoutes", formData).done(function(contact){
-          $(".thanks-modal").modal();
-        });
+          setTimeout(function() {
+            location.reload();
+          }, 3000);
+          
       });
 
   </script>  

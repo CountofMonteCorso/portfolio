@@ -44,10 +44,9 @@ module.exports = function(app, path) {
 
 		transporter.sendMail(mailOptions, function (err, info) {
 		   if (err)
-		       console.log(err);
+		    	console.log(err);
 		   else
-		       console.log(info);
+		    	console.log(info);
 		});
-		//res.send('you suck'); you can redirect here also, but do the modal you lazy fuck
 	});
 }
