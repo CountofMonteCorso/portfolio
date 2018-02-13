@@ -23,7 +23,7 @@ module.exports = function(app, path) {
 	// });
 
 	app.post("/contact", function(req, res) {
-		console.log(req.body);
+		console.log('req', req.body);
 		var nodemailer = require('nodemailer');
 		let transporter = nodemailer.createTransport({
 		    service: 'gmail',
@@ -33,12 +33,13 @@ module.exports = function(app, path) {
 		    }
 		});
 
+
 		const mailOptions = {
-		    from: 'kevdevmailer@gmail.com', // sender address
-		    to: 'kcorso89@gmail.com', // list of receivers
-		    subject: 'Dev Test', // Subject line "new email from req.firstname lastname type thing"
-		//     cc: //req.body.email
-		    html: '<p>suhh dude</p>'// req.body plain text body
+		    from: req.body.firstname + req.body.lastname, // sender address
+		    to: 'kcorso89@gmail.com',
+		    subject: req.body.subject, 
+		    // cc: req.body.email, 
+		    html: "<p>" + req.body.message + "</br>" + " That's the end of the message, sir.  It was sent by  FIRST NAME: " + req.body.firstname + " LAST NAME: " + req.body.lastname + " The email address they provided is: " + req.body.email + "</p>"
 		};
 
 		transporter.sendMail(mailOptions, function (err, info) {
@@ -47,5 +48,6 @@ module.exports = function(app, path) {
 		   else
 		       console.log(info);
 		});
+		//res.send('you suck'); you can redirect here also, but do the modal you lazy fuck
 	});
 }

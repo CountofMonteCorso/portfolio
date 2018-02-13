@@ -16,15 +16,14 @@ app.use(bodyParser.json());
 app.use(express.json());       // to support JSON-encoded bodies
 app.use(express.urlencoded({ extended: true })); // to support URL-encoded bodies
 
+app.use(express.static('public'));
+
 htmlRoutes(app, path);
 
 
 
 //won't need this til later
 //apiRoutes(app, path);
-
-
-app.use(express.static('public'));
 
 
 
