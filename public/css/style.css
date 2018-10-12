@@ -98,3 +98,9 @@ footer.page-footer {
 #copyright {
   text-align: center;
 }
+
+@media screen and (max-width: 700px) {
+    .crystalmathlogo {
+        padding-top: 20%;
+    }
+}
