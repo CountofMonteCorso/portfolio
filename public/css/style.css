@@ -73,9 +73,20 @@ form{
   }
 
   #navbarid {
-  padding-left: 1%;
-  padding-right: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+  }
 }
+
+#nav-mobile{
+  color: white;
+  font-weight: 500;
+  background-image: url("https://wallpaperplay.com/walls/full/b/7/1/258947.jpg");
+  background-color: #292a2c;
+}
+
+li{
+  color: white;
 }
 
 .icon-block {
@@ -83,6 +94,40 @@ form{
 }
 .icon-block .material-icons {
   font-size: inherit;
+}
+
+.kev-dev-nav-img{
+  margin-top: .4rem;
+  max-width: 10rem;
+}
+
+.kev-dev-home-img{
+  margin-top: 5rem;
+  max-width: 40%;
+  min-width: 20rem;
+}
+
+.about-text {
+  text-align: left; 
+  color: white; 
+  font-size: 14pt; 
+  font-family: 'Jura';
+}
+.face-img{
+  text-align: center; 
+  max-width: 200px; 
+  min-width: 50px; 
+  margin: .5rem 1rem 0 0; 
+  float: left;
+}
+
+h6{
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.xs6{
+  max-width: 50%;
 }
 
 footer.page-footer {
