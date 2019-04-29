@@ -157,7 +157,7 @@ h6{
   transition: filter .5s ease;
 }
 .ggd-link:hover{
-  filter: drop-shadow(0 0 15px rgb(0, 197, 59))
+  filter: drop-shadow(0 0 15px rgb(0, 197, 59)) 
 }
 
 #valence-img{
@@ -166,6 +166,18 @@ h6{
 
 .xs6{
   max-width: 50%;
+}
+
+.side-nav li > a {
+  color: white !important;
+  font-weight: 800 !important;
+  font-size: 2rem !important;
+  margin-bottom: 2rem !important;
+  transition: box-shadow 0.1s ease-in-out !important;
+}
+.side-nav li > a:hover{
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  box-shadow: 5px 5px 5px black !important;
 }
 
 footer.page-footer {
