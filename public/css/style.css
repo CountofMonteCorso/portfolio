@@ -126,6 +126,44 @@ h6{
   margin: 0;
 }
 
+.future-proj-images{
+  max-width: 100%;
+}
+
+.future-proj-row{
+  display: flex;
+  margin-bottom: 5rem !important; 
+}
+/* columns on future projects page */
+.right{
+  display: flex;
+  justify-content:center;
+  align-self: center;
+}
+.left{
+  display: flex;
+  justify-content:center;
+  align-self: center;
+}
+.future-text{
+  color:white;
+  display: flex;
+  font-size: 14pt; 
+  font-family: 'Jura';
+  text-align: left;
+  vertical-align: middle;
+}
+.ggd-link{
+  transition: filter .5s ease;
+}
+.ggd-link:hover{
+  filter: drop-shadow(0 0 15px rgb(0, 197, 59))
+}
+
+#valence-img{
+  filter: drop-shadow(0 0 5px #4ff);
+}
+
 .xs6{
   max-width: 50%;
 }

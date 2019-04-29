@@ -10,7 +10,7 @@
    
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
 
-  <link href="../css/style.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
 
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
@@ -27,19 +27,25 @@
       You need to enable JavaScript to run this app.
     </noscript>
 <!--navbar -->
-      <nav class="black" role="navigation" id="navbarid" style="font-family: 'Jura';">
+    <nav class="black" role="navigation" id="navbarid" style="color: white; font-family: 'Jura';">
         <div class="nav-wrapper container">
+          <a id="logo-container" href="/index.html" class="brand-logo"><img src="./images/Schaeff/png/kev-the-dev-logo-04.png" alt="Kev the Dev" class="kev-dev-nav-img"/></a>
+          <ul class="right hide-on-med-and-down" style="color: white;">
+            <li><a href="/about.html">About Me</a></li>
+            <li><a href="/projects.html">Projects</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+            <li><a href="/future.html">Future Projects</a></li>
+          </ul>
 
-          <a id="logo-container" href="home.html" class="brand-logo">
-              <img src="./images/Schaeff/png/kev-the-dev-logo-04.png" alt="Kev the Dev" class="kev-dev-nav-img"/>
-          </a>
-            <ul class="right hide-on-med-and-down">
-              <li><a href="about.html">About Me</a></li>
-              <li><a href="projects.html">Projects</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
+          <ul id="nav-mobile" class="side-nav">
+            <li><a href="/about.html">About Me</a></li>
+            <li><a href="/projects.html">Projects</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+            <li><a href="/future.html">Future Projects</a></li>
+          </ul>
+          <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
         </div>
-    </nav>
+      </nav>
 <!--content -->
     <div id="root"></div>
       <div class="parallax-container" style="height:250px">
@@ -93,7 +99,7 @@
           </div>
           <div class="row" style="text-align: left;">
               <div class="col col l6 m6 s6 xs6">
-                <a href="rel-path-to-new-page">
+                <a href="future.html">
                   <img src="images/question-mark.jpg" alt="CIL" style="text-align: right; max-width: 80%; min-width: 50px; margin-left: 2rem;">
                 </a>
               </div>
